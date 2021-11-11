@@ -1,0 +1,38 @@
+    1  ls
+    2  mkdir server_lesson
+    3  cd server_lesson
+    4  mkdir -p linux_practice1/public
+    5  cd linux_practice1/public/
+    6  touch index.php
+    7  cp index.php index_bk.php 
+    8  ls
+    9  cd ..
+   10  cp -r public tmp
+   11  ls
+   12  rm tmp/index_bk.php 
+   13  ls tmp
+   14  cd ..
+   15  touch README.md
+   16  vi README.md 
+   17  cat README.md 
+   18  git version
+   19  git init
+   20  git remote add https://github.com/hy3600/server_lesson.git
+   21  git remote add origin https://github.com/hy3600/server_lesson.git
+   22  git add .
+   23  git status
+   24  git commit -m '練習問題１'
+   25  git log
+   26  mkdir -p linux_practice2/documents
+   27  cd linux_practice2/documents/
+   28  touch gizumo{01..50}.md
+   29  ls
+   30  cd ..
+   31  mkdir trash
+   32  mv documents/gizumo{20..40}.md trash
+   33  ls documents/
+   34  ls trash/
+   35  touch .gitignore
+   36  vi .gitignore 
+   37  git status
+   38  history 300 > exec_command.log
